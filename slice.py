@@ -8,13 +8,9 @@ def slice():
     import os
     from PIL import Image
 
-<<<<<<< HEAD
+
     filename = 'testimg.fits'
     saveas = filename.replace('.fits', '')
-=======
-    filename = 'testimg'
-    saveas = filename.replace('.fits', '_')
->>>>>>> parent of 740b5d0... small changes to make test image work
     subdirectory = saveas + '_sliced'
 
     os.makedirs(subdirectory, exist_ok=True)
@@ -24,8 +20,8 @@ def slice():
         print('Fits file shape: {}'.format(scidata.shape))
 
         # shape of the data will probably change for differently generated fits
-        for i in range(len(scidata[0, :, :, :])):
-            image_array = scidata[0, i, :, :]
+        for i in range(len(scidata[:])):
+            image_array = scidata[i, :, :]
             im = Image.fromarray(image_array)
             im = im.transpose(Image.FLIP_TOP_BOTTOM)  # correct for array flip
 
