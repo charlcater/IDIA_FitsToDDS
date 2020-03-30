@@ -1,5 +1,5 @@
-# Slice .fits datacube to a series of .tifs
-# and write list of files to a text file
+# Slices s .fits datacube to a series of .tiffs
+# then convert to DDS using texassemble (a DirectX utility)
 
 from astropy.io import fits
 import glob
