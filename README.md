@@ -4,6 +4,6 @@ Scripts to convert spectroscopic datacubes to DDS format for use in VR and other
 
 **slice.py** uses [Astropy](http://www.astropy.org) and [PIL](https://pypi.python.org/pypi/Pillow/4.2.1)
 
-The **makedds** command relies on the *texassemble* utility included in [DirectXTex](https://github.com/Microsoft/DirectXTex). It takes a series of .tiff images as input and outputs a 3-dimensional DDS file of the same bit-depth as the input images.
+The **makedds** command relies on the *[texassemble](https://github.com/Microsoft/DirectXTex/wiki/Texassemble)* utility included in [DirectXTex](https://github.com/Microsoft/DirectXTex). It takes a series of .tiff images as input and outputs a 3-dimensional DDS file of the same bit-depth as the input images.
 
-Adding the built *texassemble.exe* to the Windows PATH makes is executable from anywhere.
+*Texassemble.exe* has to be built with Visual Studio 17 or clang for Windows v9. Adding the executable to the Windows PATH makes is executable from anywhere.
