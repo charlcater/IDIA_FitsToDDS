@@ -45,7 +45,7 @@ def slice(fitsfile):
                     completeName = os.path.join(subdirectory, name)
                     im.save(completeName, format='tiff')
 
-                    print('saving slice {} of {}'.format(j, len(scidata[:])-1), end="\r")
+                    print('...saving slice {} of {}'.format(j, len(scidata[:])-1), end="\r")
 
                 print()
         
@@ -59,7 +59,7 @@ def slice(fitsfile):
                 completeName = os.path.join(subdirectory, name)
                 im.save(completeName, format='tiff')
 
-                print('saving slice {} of {}'.format(i, len(scidata[:])-1), end="\r")
+                print('...saving slice {} of {}'.format(i, len(scidata[:])-1), end="\r")
             
             print()
 
